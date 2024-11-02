@@ -11,3 +11,8 @@ If you are on Windows OS, download the ZIP of this repository.
   >  RUWSG.exe
 
 Soon i pretend to bring this program for portuguese language.
+
+Screenshots of the program:
+![01](screenshots/screenshots1.png)
+![02](screenshots/screenshots2.png)
+![03](screenshots/screenshots3.png)
