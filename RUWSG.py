@@ -1,7 +1,7 @@
 import os
+import sys
 import json
 import random
-
 
 
 
@@ -110,11 +110,19 @@ def main_menu():
     print("-------------------------------------------------------- \n")
     return option_choice
 
+
+def resource_path(relative_path):
+    # Retorna o caminho absoluto ao rodar como script ou executável.
+    if hasattr(sys, '_MEIPASS'):
+        return os.path.join(sys._MEIPASS, relative_path)  # PyInstaller
+    return os.path.join(os.path.abspath("."), relative_path)
+
+
 # Seleção de dificuldade
 def select_difficulty():
     level_choice = input("Choose your difficulty: \n")
 
-    base_path = os.path.join(os.path.dirname(__file__), "data")  # cria um caminho relativo para a pasta 'data'
+    base_path = resource_path("data")
     level_files = {
         "A1": os.path.join(base_path, "A1.json"),
         "A2": os.path.join(base_path, "A2.json"),
