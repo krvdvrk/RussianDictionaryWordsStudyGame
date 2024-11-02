@@ -5,6 +5,7 @@ import random
 
 
 
+
 print(
 "██████╗ ██╗   ██╗███████╗███████╗██╗ █████╗ ███╗   ██╗   \n" 
 "██╔══██╗██║   ██║██╔════╝██╔════╝██║██╔══██╗████╗  ██║    \n"   
@@ -27,7 +28,7 @@ print(
 "                                           |___|                         \n" 
 "           \n" 
 " |_        \n" 
-" |_)  \/   \n" 
+" |_|  |/   \\n" 
 "      /  :  \n" 
 " ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░▓█░░░▓▓▓▒▒▒▓▓██▒▓▓█▓▓▓█████████████████████████████████ \n"
 " ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░▓█░░░▓█▒░▒░▓▓▓▓▓▒▓███▒█████████████████████████████████ \n" 
@@ -165,7 +166,7 @@ def select_difficulty():
 
     if level_choice in level_files:
         print(messages[level_choice])
-        with open(level_files[level_choice]) as words:
+        with open(level_files[level_choice], encoding='utf-8') as words:
             RU = json.load(words)
         return RU
     else:
