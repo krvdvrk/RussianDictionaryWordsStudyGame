@@ -13,6 +13,6 @@ If you are on Windows OS, download the ZIP of this repository.
 Soon i pretend to bring this program for portuguese language.
 
 Screenshots of the program:
-![01](screenshots/screenshots1.png)
-![02](screenshots/screenshots2.png)
-![03](screenshots/screenshots3.png)
+![01](screenshots/screenshot1.png)
+![02](screenshots/screenshot2.png)
+![03](screenshots/screenshot3.png)
